@@ -12,12 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
     <style>
-
 
 
         input[type="number"]::-webkit-inner-spin-button,
@@ -31,22 +28,22 @@
 
         /* For WebKit-based browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 12px; /* Width of the entire scrollbar */
+    width: 6px; /* Width of the entire scrollbar */
   }
-  
+
   ::-webkit-scrollbar-track {
     background:linear-gradient(#151515,black); /* Track (background) color */
   }
-  
+
   ::-webkit-scrollbar-thumb {
-    background: #888; /* Thumb (scroll bar) color */
-    border-radius: 6px; /* Rounded corners */
+    background: #ffbd3a33; /* Thumb (scroll bar) color */
+     /* Rounded corners */
   }
-  
+
   ::-webkit-scrollbar-thumb:hover {
     background: #555; /* Change color on hover */
   }
-  
+
   /* For Firefox */
   /* Firefox allows you to style scroll bars using "scrollbar-color" and "scrollbar-width" */
   /* The following example sets the color and width for both the thumb and the track */
@@ -54,14 +51,14 @@
         scrollbar-color: #888 #f1f1f1;
         scrollbar-width: thin;
     }
-    
-    
+
+
 
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            
+
         }
 
         body{
@@ -80,9 +77,9 @@
             position: fixed;
             width: 100%;
             z-index: 99999;
-        
+
         }
-        
+
         .logo img{
             width: 100px;
         }
@@ -90,7 +87,7 @@
             display: none;
         }
 
-        
+
         #menu{
             transition: all 0.5s ease;
         }
@@ -110,7 +107,7 @@
             display: flex;
         }
 
-        
+
         .menu-text ul li {
             list-style: none;
             position: relative;
@@ -118,7 +115,7 @@
             margin: 10px;
             margin-top: 27px;
           }
-          
+
           .menu-text ul li::after {
             content: "";
             position: absolute;
@@ -131,13 +128,13 @@
             transform-origin: bottom;
             transition: transform 0.3s ease; /* Adjust the transition duration as needed */
           }
-          
+
           .menu-text ul li:hover::after {
             transform: scaleX(1);
             background-color: #FFBD3A;
-            
+
           }
-          
+
 
         .menu-text ul li:hover a{
             color:#FFBD3A;
@@ -160,7 +157,7 @@
             text-transform: capitalize;
             font-weight: 900;
             color:white;
-           
+
         }
 
         .main-text span{
@@ -171,7 +168,7 @@
         .main{
             background-color: #000000;
             padding-top: 50px;
-           
+
         }
 
         .button1{
@@ -212,7 +209,7 @@
             color:black;
         }
 
-       
+
 
 
         .main{
@@ -222,10 +219,12 @@
 
 
         .about{
-            background-color: #000000;
+            background-color:#000000;
+            z-index: 9999;
+            clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
         }
 
-        
+
 
         .head-text{
             font-family:'Bebas Neue', Arial, sans-serif;
@@ -251,7 +250,7 @@
         }
 
 
-        
+
 
         .head-text .decription{
             color: white;
@@ -312,7 +311,7 @@
         z-index: 99;
        }
 
-        
+
 
 
 
@@ -320,7 +319,7 @@
             font-size: 40px;
             color: #FFBD3A;
             padding: 20px;
-            
+
         }
 
         .carddd:hover i{
@@ -340,9 +339,9 @@
             position: relative;
             padding-bottom: 5px;
 
-            
+
           }
-          
+
           .carddd p:after {
             content: "";
             position: absolute;
@@ -357,13 +356,13 @@
             width:30%;
             transition: transform 0.3s ease;
           }
-          
+
           .carddd p:hover::after{
             transform: scaleX(1);
             background-color: #FFBD3A;
-            
+
           }
-          
+
 
           .carddd p:hover a{
             color:rgb(255, 189, 58);
@@ -385,7 +384,7 @@
                 background-color: #1e1e1e;
                 clip-path: circle(15.0% at 1% 100%);
             }
-           
+
             100% {
                 background-color: #1e1e1e;
                 clip-path: circle(140.4% at 1% 100%);
@@ -402,7 +401,7 @@
         }
 
 
-            
+
 
 
         .ourproject{
@@ -414,8 +413,8 @@
             border-right: 5px solid rgba(255, 189, 58, 0.3) ;
             margin : 50px;
         }
-    
-    
+
+
             .ourproject .right-card {
                 height : 200px;
                 margin-bottom: 20px;
@@ -426,7 +425,7 @@
                 box-shadow: rgba(255, 189, 58, 0.1) 0px 8px 24px, rgba(255, 189, 58, 0.1) 0px 16px 56px, rgba(255, 189, 58, 0.1) 0px 24px 80px;
             }
 
-         
+
 
             .ourproject .left-card {
                 height : 200px;
@@ -441,7 +440,7 @@
 
 
 
-    
+
             .ourproject  img{
                 margin: 0;
                 position: absolute;
@@ -450,15 +449,15 @@
                 transform: translate(-50%, -50%);
                 transition: ease-in-out ;
                 transition-duration: 0.3s;
-                
+
             }
-            
-    
-    
+
+
+
             .ourproject .card .img1{
                 height : 200px;
                 margin: 0;
-                position: absolute; 
+                position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
@@ -466,12 +465,12 @@
                 transition-duration: 0.3s;
 
             }
-    
-    
-           /* .ourproject  img:hover{            
+
+
+           /* .ourproject  img:hover{
                 height : 300px;
             } */
-    
+
             .ourproject  .project-detail{
                 width: 100%;
                 padding: 10px;
@@ -481,46 +480,46 @@
                 height: 100%;
                 background-color: #000000;
             }
-    
+
             .ourproject  .project-detail h2{
                 color:#d7d7d7;
                 font-size: 25px;
             }
-    
+
             .ourproject  .project-detail p{
                 color:#a3a3a3;
                 font-size: 13px;
             }
-    
+
             .ourblog{
                 background-color:#000d1c;
                 padding-top: 50px;;
-                padding-bottom: 150px; 
+                padding-bottom: 150px;
                 clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
             }
-    
-    
+
+
             .ourblog .card{
                 background-color: #141414;
-                
+
             }
-    
+
             .ourblog .texttt{
                 padding: 20px;
                 padding-top: 5px;
             }
-          
-    
+
+
             .ourblog .texttt h5{
                 padding-bottom: 10px;
                 font-weight: 500;
             }
-    
+
             .ourblog .texttt p{
                 color:#969696;
                 font-size: 14px;
             }
-    
+
             .ourblog .texttt .date{
                 color:#FFBD3A;
                 font-weight: 600;
@@ -555,8 +554,8 @@
                 top: -53px;
                 font-size:27px;
                 color:#FFBD3A;
-               
-                
+
+
             }
 
 
@@ -565,7 +564,7 @@
                     background-color: #1e1e1e;
                     clip-path: circle(15.0% at 1% 100%);
                 }
-               
+
                 100% {
                     background-color: #1e1e1e;
                     clip-path: circle(140.4% at 1% 100%);
@@ -609,8 +608,8 @@
                 color:#FFBD3A;
                 font-size: 20px;
             }
-            
-            
+
+
             .footer div{
                 color: #a1a1a1;
             }
@@ -654,7 +653,7 @@
                 display: block;
                 transform: rotate(90deg);
                 position: relative;
-                
+
             }
 
 
@@ -666,22 +665,22 @@
                 left:-8px;
                 animation: jump 1s infinite;
             }
-    
+
             @keyframes jump {
-    
+
                 0%{
                     transform:scale(1)
                 }
-    
+
                 50%{
                     transform: scale(1.1)
                 }
-    
+
                 100%{
                     transform:scale(1) ;
-                    
+
                 }
-                
+
             }
 
 
@@ -694,7 +693,7 @@
                 z-index: 9999999999999999999999999;
                 display: none;
             }
-    
+
             .popup .popupbox{
                 position: absolute;
                 top: 50%;
@@ -715,7 +714,7 @@
                 0% {
                     clip-path: circle(1% at 50% 50%);
                 }
-               
+
                 100% {
                     clip-path: circle(70.7% at 50% 50%);
                 }
@@ -738,22 +737,22 @@
                 transform: translate(-50%, -50%);
                 width: 85%;
                 height:70%;
-              
+
             }
 
             .popup img{
                 position: absolute;
                 opacity: 0.2;
                 z-index: -1;
-                
+
             }
 
             .popupcontents input{
                 background-color: transparent;
                 border-radius: 30px;
-            
+
             }
-            
+
 
 
 
@@ -779,9 +778,9 @@
                 margin : 0px;
             }
 
-            
+
             .whychooseme {
-            
+
                 clip-path: polygon(79% 4%, 99% 10%, 117% 19%, 100% 100%, 25% 95%, -19% 89%, 0 78%, 0 0, 38% 1%);
             }
 
@@ -796,13 +795,13 @@
             .boxxx h4{
 
                 height: 20px;
-                
+
             }
 
             .boxxx p{
                 height: 50px;
             }
-            
+
 
             .main{
                 padding-top: 0px;
@@ -822,7 +821,7 @@
 
             .logo img{
                 width: 100px;
-               
+
             }
 
             .menu{
@@ -867,7 +866,7 @@
             .menu-text ul::-webkit-scrollbar {
                     display: none;
                 }
-              
+
               /* Hide scrollbar for IE, Edge and Firefox */
               .menu-text ul{
                 -ms-overflow-style: none;  /* IE and Edge */
@@ -904,29 +903,29 @@
                 transition-duration: 0.4s;
             }
 
-           
+
             .menu-text ul li:hover{
                 background-color: #FFBD3A;
             }
- 
+
             .menu-text ul li:hover a{
                 color: black;
 
             }
-           
 
- 
+
+
 
         }
 
 
         .freelancer{
-            background : url({% static 'bg5.jpg' %});
+            background : url('/bg5.jpg');
             background-position: center;
             background-size: cover;
-            
 
-            
+
+
         }
 
         .freelancer .card{
@@ -967,7 +966,7 @@
         .freelancer .card p{
             color: rgb(158, 158, 158);
         }
-        
+
 
         .contact{
             background-color: #000000;
@@ -984,7 +983,7 @@
             width: 100%;
             height:auto;
             transform: scale(1.2);
-            
+
         }
 
 
@@ -1043,7 +1042,7 @@
         }
 
 
-        
+
 
         .boxxx{
             border : 1px solid rgb(71, 71, 71);
@@ -1059,10 +1058,10 @@
             height: 50px;
             transition: ease-in-out;
             transition-duration: 0.3s;
-            
+
         }
 
-    
+
 
 
 
@@ -1076,7 +1075,7 @@
             -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;
             transition: ease-in-out;
-            transition-duration: 0.3s;  
+            transition-duration: 0.3s;
         }
 
 
@@ -1087,21 +1086,21 @@
             color: #FFBD3A;
             transition: ease-in-out;
             transition-duration: 0.3s;
-            
+
         }
 
         .boxxx:hover a{
             color: #FFBD3A;
         }
 
-            
-        
+
+
         .boxxx p::-webkit-scrollbar {
             display: none;
         }
-        
 
-        
+
+
 
         .boxxx:hover{
             background-color:black;
@@ -1129,7 +1128,7 @@
             background-color:#555;
             color : black;
             border-radius: 0px;
-            
+
         }
 
 
@@ -1137,7 +1136,7 @@
         .setting{
 
             position:fixed;
-            right: 0px;
+            left: 0px;
             bottom: 50%;
             background-color: #1e1e1e;
             padding: 10px;
@@ -1152,14 +1151,14 @@
             color: white;
             font-size: 25px;
             animation: setting-rotate 5s infinite ;
-            
+
         }
 
 
         .setting:hover i{
             animation: setting-rotate 1s infinite ;
             color: #FFBD3A;
-            
+
         }
         .setting:hover{
             opacity: 1;
@@ -1170,8 +1169,8 @@
             0%{
                 transform: rotate(360deg);
             }
-            
-            
+
+
         }
 
 
@@ -1181,11 +1180,12 @@
             width: 290px;
             padding: 10px;
             border : 1px solid gray;
-            right: -290px;
+            left: -290px;
             top: 35%;
             text-align: center;
             transition: ease-in;
             transition-duration: 0.5s;
+            background-color: #000000;
         }
 
         .social-media i{
@@ -1213,7 +1213,7 @@
         }
 
         .popupcontents{
-          
+
         }
         .popupcontents h3{
             color: white;
@@ -1228,8 +1228,8 @@
         .popupcontents input{
             background-color: transparent;
             border-radius: 30px;
-            
-            
+
+
         }
 
         .popupcontents input:focus{
@@ -1241,7 +1241,7 @@
         }
 
         .popupcontents button{
-           
+
             padding: 6px;
             border: none;
             font-weight: 700;
@@ -1257,7 +1257,7 @@
         }
 
         .leftpopupbox{
-            
+
         }
 
         .rightpopupbox{
@@ -1266,8 +1266,8 @@
 
         .rightpopupbox h3{
             font-weight: 400;
-            
-        
+
+
         }
 
         .rightpopupbox span{
@@ -1289,10 +1289,117 @@
             padding: 10px;
         }
 
-        
+        .weel {
+            position: relative;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            animation: rotateCircle 50s linear infinite;
+            background-color: rgba(255, 189, 58, 0.56);
+            box-shadow: rgba(255, 189, 58, 0.1) 0px 8px 24px, rgba(255, 189, 58, 0.1) 0px 16px 56px, rgba(255, 189, 58, 0.1) 0px 24px 80px;
+            box-shadow: rgba(255, 189, 58, 0.56) 0px 0px 200px 50px;
+            z-index: -1;
+
+          }
+          .weel:hover{
+            animation: none;
+          }
 
 
-        
+
+          @keyframes rotateCircle {
+            from {
+              transform: rotate(360deg);
+            }
+            to {
+              transform: rotate(0deg);
+            }
+          }
+
+
+
+
+
+          .numbers {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            pointer-events: none;
+          }
+
+          .number {
+            position: absolute;
+            font-size: 14px;
+            color: #333;
+          }
+
+
+          .number-4 {
+            bottom: 0%;
+            left: 95%;
+          }
+
+
+
+          .number-6 {
+            bottom: -20%;
+            right: 50%;
+            transform: translateX(50%);
+          }
+
+          .number-7 {
+            bottom: 0%;
+            right: 95%;
+          }
+
+          .number-8 {
+            top: 50%;
+            left: -22%;
+            transform: translate(0, -50%);
+          }
+
+          .number-9 {
+            top: 5%;
+            left: -8%;
+          }
+
+          .number-10 {
+            top: -20%;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          .number-11 {
+            top: 5%;
+            right: -6%;
+          }
+
+          .number-12 {
+            top: 50%;
+            left: 110%;
+            transform: translate(0, -50%);
+          }
+
+          .weel i{
+            font-size: 35px;
+            color: #FFBD3A;
+          }
+
+
+        .booooox{
+            position: fixed;
+            top:25%;
+            left:80%
+
+        }
+
+
+
+
+
 
 
 
@@ -1316,16 +1423,16 @@
 
             <p class="close" id="close">X</p>
 
-            
+
 
                 <div class="row">
-                    
+
                     <div class="col-sm-12 col-lg-5 col-md-5 leftpopupbox">
                         <img src="{% static 'popup.png'%}" width="300">
 
                     </div>
                     <div class="col-sm-12 col-lg-7 col-md-7 rightpopupbox">
-                       
+
                         <h3>
                             Efficiently turn your<br> <span>Idea</span> into <span style="padding-left: 80px;">Reality</span> with minimal service <span>costs</span>.
                         </h3>
@@ -1346,15 +1453,15 @@
                             <div class="col-4">
                                 <a href="https://www.instagram.com/code_ajay/" class="col-md-4 col-sm-4 "><i class="fa-brands fa-instagram" style="color : #E1306C;"></i></a>
                             </div>
-                         
+
                         </div>
 
 
                     </div>
 
-                
-                
- 
+
+
+
             </div>
         </div>
     </div>
@@ -1362,7 +1469,7 @@
 
 
 
-    
+
 
 
 
@@ -1389,7 +1496,7 @@
                 <a href="https://rastudio.pythonanywhere.com/" class="col-md-4 col-sm-4 social-icon fb"><i class="fa-solid fa-earth-asia"></i></a>
             </div>
 
-            
+
         </div>
 
 
@@ -1403,25 +1510,25 @@
 
     <div class="setting" id="setting">
         <i class="fa-solid fa-gear setting-icon" ></i>
-        
+
     </div>
 
-    
 
 
 
 
 
-    
+
+
 
     <section class="whatapppopup">
 
-    
+
         <a href="https://wa.me/918603862290">
             <i  class="fa-brands fa-whatsapp"></i>
             <p class="whatapp-text">Whatapp</p>
         </a>
-        
+
     </section>
 
 
@@ -1465,11 +1572,11 @@
                 <div class="col-md-12 col-lg-6 col-sm-12 main-text">
                     <p>HELLO!</p>
                     <h1 class="">
-                        I'm 
+                        I'm
                         <span>
-                            
+
                             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-interval="10000" id="myCarousel">
-                              
+
                                 <div class="carousel-inner">
                                   <div class="carousel-item active">
                                     Web Developer
@@ -1491,11 +1598,11 @@
                               </div>
 
                         </span>
-                        
+
                     </h1>
 
                     <p>
-                        I am a dedicated and passionate Full Stack Developer with extensive expertise in Python Django and a flair for building innovative solutions. My journey in software development has led me to excel not only in Django but also as a proficient Flutter Mobile App Developer. 
+                        I am a dedicated and passionate Full Stack Developer with extensive expertise in Python Django and a flair for building innovative solutions. My journey in software development has led me to excel not only in Django but also as a proficient Flutter Mobile App Developer.
                     </p>
 
                     <p>
@@ -1510,9 +1617,44 @@
                 </div>
 
                 <div class="col-md-12 col-lg-6 col-sm-12 main-image mt-3">
-                    
-                        <img class="img-fluid" src="{% static 'aj.jpg' %}">
-                    
+
+<!--                        <img class="img-fluid" src="{% static 'aj.jpg' %}">-->
+                    <div class="booooox">
+
+                        <div class="weel" id="rotatingCircle">
+
+                            <div class="center-circle"></div>
+                            <div class="numbers">
+                              <div class="number number-4">
+                                <i class="fa-brands fa-python"></i>
+                              </div>
+                              <div class="number number-6">
+                                <i class="fa-brands fa-java"></i>
+                              </div>
+                              <div class="number number-7">
+                                <i class="fa-brands fa-js"></i>
+                              </div>
+                              <div class="number number-8">
+                                <i class="fa-brands fa-android"></i>
+                              </div>
+                              <div class="number number-9">
+                                <i class="fa-brands fa-react"></i>
+                              </div>
+                              <div class="number number-10">
+                                <i class="fa-brands fa-html5"></i>
+                              </div>
+                              <div class="number number-11">
+                                <i class="fa-brands fa-css3-alt"></i>
+                              </div>
+                              <div class="number number-12">
+                                <i class="fa-brands fa-aws"></i>
+                              </div>
+                            </div>
+                          </div>
+
+                    </div>
+
+
                 </div>
             </div>
         </div>
@@ -1529,12 +1671,12 @@
                     <br><br>
                     <a href="https://www.linkedin.com/in/codeaj/">
                         <img src="{% static 'linkedin1.jpg' %}" class="img-fluid " style="margin-top: 130px;">
-                    </a> 
+                    </a>
 
                     <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="codeaj" data-version="v1">
                         <a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/codeaj?trk=profile-badge"></a>
                     </div> -->
-                   
+
                 </div>
 
                 <div class="col-md-12 col-lg-6 col-sm-12">
@@ -1547,7 +1689,7 @@
                         <p class="decription">Expert Python Django Full Stack Developer | Flutter Mobile App Developer | Building Next-Gen Solutions</p>
                     </div>
 
-                    
+
 
                     <div class="row about-text">
                         <div class="col-4 bold-about f">Name </div>
@@ -1590,7 +1732,7 @@
                 <h3 class="text">Services</h3>
                 <h2 class="shadow">Services</h2>
                 <p class="decription">Expert Python Django Full Stack Developer | Flutter Mobile App Developer | Building Next-Gen Solutions</p>
-    
+
             </div>
 
             <div class="row boxxxxx">
@@ -1604,7 +1746,7 @@
 
                     <div class="card cardd "></div>
 
-                    
+
                 </div>
 
 
@@ -1631,7 +1773,7 @@
                 </div>
 
             </div>
-    
+
         </div>
 
     </section>
@@ -1649,84 +1791,84 @@
                 <h3 class="text">Why Me</h3>
                 <h2 class="shadow">Why Me</h2>
                 <p class="decription">Expert Python Django Full Stack Developer | Flutter Mobile App Developer | Building Next-Gen Solutions</p>
-    
+
             </div>
-    
-    
+
+
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-lg-3 boxxx">
                     <h4>
                         Profressional and Dedicated Team
                     </h4>
-    
+
                     <p>
                        Building architectures with modern technology
                     </p>
-    
+
                     <i class="fa-solid fa-users-viewfinder"></i>
-    
+
                     <br>
                     <a href="#">More</a>
-    
+
                 </div>
 
                 <div class="col-md-6 col-sm-6 col-lg-3 boxxx">
                     <h4>
                         Unique Design
                     </h4>
-              
+
                     <p>
                         Bring the beautifully for your house, Just enjoy!
                     </p>
-    
+
                     <i class="fa-solid fa-compass-drafting"></i>
-    
+
                     <br>
                     <a href="#">More</a>
-    
+
                 </div>
 
                 <div class="col-md-6 col-sm-6 col-lg-3 boxxx">
                     <h4>
                         Affordable and Flexiable
                     </h4>
-    
+
                     <p>
                         Bring nature in your house. Health is important
                     </p>
-    
+
                     <i class="fa-solid fa-credit-card"></i>
-    
+
                     <br>
                     <a href="#">More</a>
-    
+
                 </div>
 
                 <div class="col-md-6 col-sm-6 col-lg-3 boxxx">
                     <h4>
                         24/7 Support
                     </h4>
-    
+
                     <p>
                         Consulting Solutions and make plan to renovation
                     </p>
-    
+
                     <i class="fa-regular fa-clock"></i>
-    
+
                     <br>
                     <a href="#">More</a>
-    
+
                 </div>
 
 
 
 
             </div>
-    
+
 
         </div>
 
-  
+
     </section>
 
 
@@ -1740,7 +1882,7 @@
                 <h3 class="text">Our Projects</h3>
                 <h2 class="shadow">Projects</h2>
                 <p class="decription">Expert Python Django Full Stack Developer | Flutter Mobile App Developer | Building Next-Gen Solutions</p>
-    
+
             </div>
 
 
@@ -1748,7 +1890,7 @@
             <div class="row">
 
                 <div class="col-md-6 col-sm-12 col-lg-6">
-                    
+
                         <div class="project-detail">
                             <a href="#" >
                             <h2>PlayHere Quiz</h2>
@@ -1757,7 +1899,7 @@
                             </p>
                             </a>
 
-                        </div> 
+                        </div>
                 </div>
 
 
@@ -1765,7 +1907,7 @@
                     <div class="right-card">
 
                         <img class="img-fluid img1" src="{% static 'playhere.jpg' %}">
-                        
+
                     </div>
 
                 </div>
@@ -1780,7 +1922,7 @@
                 </div>
 
                 <div class="col-md-6 col-sm-12 col-lg-6">
-                
+
                     <div class="project-detail">
                         <a href="#" >
                         <h2>Kalyan Hospital</h2>
@@ -1794,7 +1936,7 @@
 
 
                 <div class="col-md-6 col-sm-12 col-lg-6">
-                    
+
                     <div class="project-detail">
                         <a href="#" >
                         <h2>Emotion is Every Thing</h2>
@@ -1804,14 +1946,14 @@
                         </a>
 
                     </div>
-                
+
             </div>
 
 
             <div class="col-md-6 col-sm-12 col-lg-6">
                 <div class="right-card">
                     <img class="img-fluid img1" src="{% static 'emotion.png' %}">
-                    
+
                 </div>
 
             </div>
@@ -1828,7 +1970,7 @@
 
 
             <div class="col-md-6 col-sm-12 col-lg-6">
-            
+
                 <div class="project-detail">
                     <a href="#" >
                     <h2>RA Studios</h2>
@@ -1890,7 +2032,7 @@
 
         </div>
 
-        
+
 
         <div class="row">
 
@@ -1899,7 +2041,7 @@
 
                 <div class="card">
                     <img src="{% static 'blog1.jpg' %}">
-    
+
                     <div class="texttt">
                         <p class="date">Oct 22, 2023   &nbsp;&nbsp;&nbsp;   CODEAJ  &nbsp;&nbsp;&nbsp;    <span>
                             <i class="fa-regular fa-message"></i> 3
@@ -1913,16 +2055,16 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quod voluptatum natus eum
                         </p>
                     </div>
-    
+
                 </div>
-    
+
             </div>
 
             <div class="col-md-6 col-lg-4 col-sm-12 mb-3">
 
                 <div class="card">
                     <img src="{% static 'blog2.jpg' %}">
-    
+
                     <div class="texttt">
                         <p class="date">Oct 22, 2023   &nbsp;&nbsp;&nbsp;   CODEAJ  &nbsp;&nbsp;&nbsp;    <span>
                             <i class="fa-regular fa-message"></i> 3
@@ -1936,16 +2078,16 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quod voluptatum natus eum
                         </p>
                     </div>
-    
+
                 </div>
-    
+
             </div>
 
             <div class="col-md-6 col-lg-4 col-sm-12 mb-3">
 
                 <div class="card">
                     <img src="{% static 'blog4.jpg' %}">
-    
+
                     <div class="texttt">
                         <p class="date">Oct 22, 2023   &nbsp;&nbsp;&nbsp;   CODEAJ  &nbsp;&nbsp;&nbsp;    <span>
                             <i class="fa-regular fa-message"></i> 3
@@ -1959,9 +2101,9 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quod voluptatum natus eum
                         </p>
                     </div>
-    
+
                 </div>
-    
+
             </div>
 
 
@@ -1969,7 +2111,7 @@
 
 
         </div>
-    </div>  
+    </div>
 </section>
 
 
@@ -2043,48 +2185,48 @@
 
 
         <div class="row text-center">
-            <div class="col-md-4 col-lg-3 col-sm-6 mb-3"> 
+            <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
                 <div class="cd">
                     <a href="https://maps.app.goo.gl/uQ3QgWS4AJR6vYMBA">
                     <div class="boo">
                         <div class="bo">
-                        
+
                         </div>
                         <i class="fa-solid fa-map-location-dot"></i>
                     </div>
-                    
-                    
-                    
+
+
+
                         <h5>ADDRESS</h5>
                         <p>
                             Upkar Layout, Whitefield, Bengaluru, Karnataka 560066
                         </p>
 
                     </a>
-                    
+
                 </div>
             </div>
 
 
-            <div class="col-md-4 col-lg-3 col-sm-6 mb-3"> 
+            <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
                 <div class="cd">
                     <a href="+tel:918603862290">
                     <div class="boo">
                         <div class="bo">
-                        
+
                         </div>
                         <i class="fa-solid fa-phone"></i>
                     </div>
-                    
-                    
-                    
+
+
+
                         <h5>CONTACT NUMBER</h5>
 
                         <p>
                             +91 8603862290
                         </p>
                     </a>
-                    
+
 
                 </div>
             </div>
@@ -2092,44 +2234,44 @@
 
 
 
-            <div class="col-md-4 col-lg-3 col-sm-6 mb-3"> 
+            <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
                 <div class="cd">
                     <a href="mailto:codeaj4u@gmail.com">
                     <div class="boo">
                         <div class="bo">
-                        
+
                         </div>
                         <i class="fa-solid fa-paper-plane"></i>
                     </div>
-                    
-                    
+
+
 
                     <h5>EMAIL ADDRESS</h5>
 
-                    
+
                         <p>
                             codeaj4u@gmail.com
                         </p>
                     </a>
 
-                    
+
 
                 </div>
             </div>
 
-            <div class="col-md-4 col-lg-3 col-sm-6 mb-3"> 
+            <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
                 <div class="cd">
 
                     <a href="https://wa.me/918603862290">
                     <div class="boo">
                         <div class="bo">
-                        
+
                         </div>
                         <i class="fa-brands fa-whatsapp"></i>
                     </div>
-                    
-                    
-                    
+
+
+
 
                         <h5>WHATSAPP</h5>
 
@@ -2138,7 +2280,7 @@
                         </p>
 
                     </a>
-                    
+
 
                 </div>
             </div>
@@ -2159,7 +2301,7 @@
                 <div class="text-center">
                     <input type="submit" class="button1">
                 </div>
-                
+
             </div>
 
 
@@ -2167,7 +2309,7 @@
             <div class="col-md-12 col-lg-6 col-sm-12  con1">
                 <img src="{%  static 'gitprofile.jpg' %}">
             </div>
-            
+
 
         </div>
 
@@ -2209,11 +2351,11 @@
                         <a href="#">
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        
+
                     </div>
 
                 </div>
-                
+
 
             </div>
 
@@ -2258,7 +2400,7 @@
                         458, 9th floor, ABC building, New York City, USA
                     </div>
 
-                 
+
 
                     <div class="col-2 mt-3">
                         <i class="fa-solid fa-phone"></i>
@@ -2277,13 +2419,13 @@
 
                 </div>
             </div>
-            
+
         </div>
     </div>
 
     <div class="col-12  text-center p-4 copyright">
         Copyright &#169;2023 All right reserved | codeAj
-    </div> 
+    </div>
 
 </section>
 
@@ -2315,10 +2457,41 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    
-    
+
+
+    <script>
+
+        // JavaScript code to rotate the circle based on mouse wheel scroll when hovered
+        const rotatingCircle = document.getElementById('rotatingCircle');
+        let isHovered = false;
+        let currentRotation = 0;
+
+        rotatingCircle.addEventListener('mouseenter', () => {
+        isHovered = true;
+        });
+
+        rotatingCircle.addEventListener('mouseleave', () => {
+        isHovered = false;
+        });
+
+        window.addEventListener('wheel', (event) => {
+        if (isHovered) {
+            currentRotation += event.deltaY;
+            rotatingCircle.style.transform = `rotate(${currentRotation}deg)`;
+            event.preventDefault(); // Prevent default scrolling behavior
+        }
+        });
+
+
+
+
+
+    </script>
+
+
+
     <script>
 
 
@@ -2333,17 +2506,17 @@
 
             //popup-code
 
-           
+
             function generateUserId() {
                 return 'user_' + Math.random().toString(36).substr(2, 9);
             }
 
-           
+
             function hasPopupBeenShown() {
                 return sessionStorage.getItem('userId') !== null;
             }
 
-           
+
             function displayPopup() {
                 var element = $("#popup");
                 //if (!hasPopupBeenShown()) {
@@ -2352,10 +2525,10 @@
                 //}
             }
 
-           
-         
+
+
             setTimeout(displayPopup, 5000);
-           
+
 
 
 
@@ -2379,10 +2552,10 @@
             var contentVisible = true;
             $("#setting").click(function () {
                 if (contentVisible) {
-                    
+
                     $(".setting").css("right","290px");
                     $(".social-media").css("right","0px");
-                    
+
 
 
                 } else {
